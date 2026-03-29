@@ -1,0 +1,64 @@
+@use 'sass:color';
+
+/* Hero Section Styles */
+
+.hero-brand-label {
+  color: var(--color-primary-red);
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  color: var(--color-white);
+  letter-spacing: -0.02em;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+}
+
+.hero-accent {
+  color: var(--color-primary-red);
+}
+
+.hero-description {
+  color: var(--color-light-gray);
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: var(--color-primary-red);
+  color: var(--color-white);
+  border: 2px solid var(--color-primary-red);
+
+  &:hover {
+    background-color: color.adjust(#e63946, $lightness: -10%);
+    border-color: color.adjust(#e63946, $lightness: -10%);
+  }
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-primary-red);
+  border: 2px solid var(--color-primary-red);
+
+  &:hover {
+    background-color: var(--color-primary-red);
+    color: var(--color-white);
+  }
+}
+
+/* Image Animation */
+img {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

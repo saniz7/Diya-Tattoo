@@ -1,1 +1,87 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700;800&display=swap');
+
+/* Diya Tattoo Brand Colors */
+:root {
+  --color-primary-black: #1a1a1a;
+  --color-primary-red: #e63946;
+  --color-white: #ffffff;
+  --color-light-gray: #f5f5f5;
+  --color-dark-bg: #2a2a2a;
+}
+
 /* You can add global styles to this file, and also import other style files */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+/* Accent Color Utility */
+.accent-red {
+  color: #e63946;
+}
+
+.border-red-accent {
+  border-color: #e63946;
+}
+
+.hover-red {
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.hover-red:hover {
+  color: #e63946;
+}
+
+/* Simple animation utilities */
+.fade-in {
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+.slow-fade {
+  animation: fadeIn 1s ease-out both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Accessibility focus ring */
+:focus {
+  outline: 3px solid rgba(230, 57, 70, 0.18);
+  outline-offset: 3px;
+}
+
+/* Make header sticky so navbar remains visible on scroll */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 80;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}

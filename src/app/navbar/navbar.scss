@@ -1,0 +1,46 @@
+.container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  background-color: white;
+  color: black;
+}
+
+/* Sticky navbar */
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+
+  padding: 12px 0;
+  transition: all 0.3s ease;
+}
+
+/* Smaller navbar when scrolling */
+.sticky-nav.scrolled {
+  padding: 4px 0;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Logo shrink */
+.sticky-nav img {
+  height: 112px;
+  transition: height 0.3s ease;
+}
+
+.sticky-nav.scrolled img {
+  height: 60px;
+}
+
+/* Link shrink */
+.sticky-nav a {
+  font-size: 14px;
+  transition: font-size 0.3s ease;
+}
+
+.sticky-nav.scrolled a {
+  font-size: 13px;
+}
