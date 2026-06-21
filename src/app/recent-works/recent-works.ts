@@ -84,9 +84,29 @@ export class RecentWorks implements OnInit, OnDestroy {
       alt: 'Minimal Turtle Tattoo',
     },
     {
-      id: 13,
+      id: 14,
       src: '/assets/images/Buddha.jpeg',
       alt: 'Buddha Tattoo',
+    },
+    {
+      id: 15,
+      src: '/assets/images/Flower Tattoo Design.jpeg',
+      alt: 'Flower Tattoo',
+    },
+    {
+      id: 16,
+      src: '/assets/images/Minimalist Tattoo Design.jpeg',
+      alt: 'Minimalist Tattoo',
+    },
+    {
+      id: 17,
+      src: '/assets/images/Buddha Hand Tattoo Design.jpeg',
+      alt: 'Buddha Hand Tattoo',
+    },
+    {
+      id: 18,
+      src: '/assets/images/Wolf Tattoo Design.jpeg',
+      alt: 'Wolf Tattoo',
     },
   ];
 
